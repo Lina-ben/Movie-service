@@ -1,0 +1,24 @@
+server:
+  port: 9090
+eureka:
+  instance:
+    preferIpAddress: true
+    hostname: movie-service
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/ #http://registry-service.default.svc.cluster.local/eureka/
+  healthcheck:
+    enabled: true
+
+spring:
+  application:
+    name: movie-service
+
+  h2:
+    console:
+      enabled: true
+
+ 
+
+
+
